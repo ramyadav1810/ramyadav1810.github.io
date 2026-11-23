@@ -1,0 +1,255 @@
+
+/* About Page Header */
+
+.about-header {
+    position: relative;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.back-btn i {
+    font-size: 2rem;
+}
+
+
+/* About Page Layout */
+
+.about-page {
+    min-height: 100vh;
+    padding: 10rem 9% 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6rem;
+}
+
+
+/* Profile Image */
+
+.about-page-img img {
+    width: 35rem;
+    height: 35rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 3px solid var(--main-color);
+
+    box-shadow: 0 0 30px var(--main-color);
+
+    transition: 0.4s ease;
+}
+
+.about-page-img img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 45px var(--main-color);
+}
+
+
+/* About Content */
+
+.about-page-content {
+    max-width: 70rem;
+}
+
+.about-page-content h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.about-page-content h1 span {
+    color: var(--main-color);
+}
+
+.about-page-content h3 {
+    font-size: 2.8rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.about-page-content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+
+    margin-bottom: 1.5rem;
+
+    color: var(--text-color);
+}
+
+
+/* Education, Skills and Career Details */
+
+.about-details {
+    background: var(--second-bg-color);
+
+    border: 1px solid rgba(255, 69, 0, 0.3);
+    border-left: 3px solid var(--main-color);
+
+    border-radius: 1rem;
+
+    padding: 2rem;
+    margin-top: 2rem;
+
+    transition: 0.3s ease;
+}
+
+.about-details:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.2);
+}
+
+.about-details h2 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+
+    margin-bottom: 1.5rem;
+}
+
+.about-details h2 i {
+    margin-right: 0.5rem;
+}
+
+.about-details p {
+    margin-bottom: 0;
+}
+
+
+/* Skills */
+
+.about-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.about-skills span {
+    font-size: 1.4rem;
+
+    padding: 0.8rem 1.5rem;
+
+    border: 1px solid var(--main-color);
+    border-radius: 3rem;
+
+    transition: 0.3s ease;
+}
+
+.about-skills span:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+
+    transform: translateY(-3px);
+}
+
+
+/* About Page Buttons */
+
+.about-page-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    margin-top: 3rem;
+}
+
+.about-page-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.about-page-buttons .btn i {
+    font-size: 2rem;
+}
+
+
+/* Footer */
+
+.about-footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+/* Animation Initial State */
+
+.about-page-img,
+.about-page-content {
+    opacity: 0;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1000px) {
+
+    .about-page {
+        flex-direction: column;
+        text-align: center;
+
+        padding: 8rem 5% 5rem;
+        gap: 4rem;
+    }
+
+    .about-page-img img {
+        width: 28rem;
+        height: 28rem;
+    }
+
+    .about-page-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .about-skills {
+        justify-content: center;
+    }
+
+    .about-page-buttons {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .about-header {
+        padding: 2rem 5%;
+    }
+
+    .about-header .logo {
+        font-size: 2.2rem;
+    }
+
+    .back-btn {
+        font-size: 1.3rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .about-page-img img {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .about-page-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .about-page-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .about-page-content p {
+        font-size: 1.4rem;
+    }
+
+    .about-details {
+        padding: 1.5rem;
+    }
+
+}
